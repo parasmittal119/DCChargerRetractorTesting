@@ -1,0 +1,7 @@
+DUT PART NUMBER: HE518860#123456789012344
+
+Testing Engg. Name: PARAS
+
+Checking color state for "Idle Idle".
+Serial Port issue
+Test Stopped!

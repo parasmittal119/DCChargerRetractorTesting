@@ -1,0 +1,7 @@
+DUT PART NUMBER: 
+
+Testing Engg. Name: PARAS
+
+Checking color state for "Idle Idle".
+Color state for "Idle Idle" is wrong...
+Checking color state for "Idle Preparing".

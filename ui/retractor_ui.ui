@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>799</width>
+    <height>939</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>60</y>
+     <width>541</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="ateHeading">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>115</y>
+      <width>411</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:4px solid black;background-color: rgb(250, 249, 246);</string>
+    </property>
+    <property name="text">
+     <string>Retractor LED Testing</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>173</y>
+      <width>491</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:4px solid black;border-radius:30px;background-color: rgb(250, 249, 246);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>451</width>
+      <height>251</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="serialLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>510</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Serial Number</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditBarcode">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>510</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background-color:rgba(0,0,0,0);
+border:none;
+border-bottom: 3px solid rgba(42,226,230,255);
+color:rgba(0,0,0,255);
+padding-bottom:7px;
+border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.323864 rgba(222, 45, 175, 255), stop:0.5 rgba(211, 61, 235, 255), stop:0.642045 rgba(157, 45, 241, 255), stop:1 rgba(0, 0, 255, 255));
+}
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Barcode here</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditName">
+    <property name="geometry">
+     <rect>
+      <x>209</x>
+      <y>550</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background-color:rgba(0,0,0,0);
+border:none;
+border-bottom:3px solid rgba(42,226,230,255);
+color:rgba(0,0,0,255);
+padding-bottom:7px;
+border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.323864 rgba(222, 45, 175, 255), stop:0.5 rgba(211, 61, 235, 255), stop:0.642045 rgba(157, 45, 241, 255), stop:1 rgba(0, 0, 255, 255));
+}
+</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Enter your name</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nameLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>560</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Associate Name</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>610</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.323864 rgba(222, 45, 175, 255), stop:0.5 rgba(211, 61, 235, 255), stop:0.642045 rgba(157, 45, 241, 255), stop:1 rgba(0, 0, 255, 255));
+font: 75 20pt 'MS Shell Dlg 2';
+border-top-left-radius:30px;
+border-bottom-right-radius:30px;
+}
+
+
+
+QPushButton::hover{
+font: 75 25pt 'MS Shell Dlg 2';
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.323864 rgba(222, 45, 175, 255), stop:0.5 rgba(211, 61, 235, 255), stop:0.642045 rgba(157, 45, 241, 255), stop:1 rgba(0, 0, 255, 255));
+
+}
+
+
+
+QPushButton::pressed{
+font: 75 25pt 'MS Shell Dlg 2';
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.323864 rgba(222, 45, 175, 255), stop:0.5 rgba(211, 61, 235, 255), stop:0.642045 rgba(157, 45, 241, 255), stop:1 rgba(0, 0, 255, 255));
+padding-top:10px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Start Test</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="log">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>610</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.323864 rgba(222, 45, 175, 255), stop:0.5 rgba(211, 61, 235, 255), stop:0.642045 rgba(157, 45, 241, 255), stop:1 rgba(0, 0, 255, 255));
+font: 75 20pt 'MS Shell Dlg 2';
+border-top-right-radius:30px;
+border-bottom-left-radius:30px;
+}
+
+
+
+QPushButton::hover{
+font: 75 25pt 'MS Shell Dlg 2';
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.323864 rgba(222, 45, 175, 255), stop:0.5 rgba(211, 61, 235, 255), stop:0.642045 rgba(157, 45, 241, 255), stop:1 rgba(0, 0, 255, 255));
+
+}
+
+
+
+QPushButton::pressed{
+font: 75 25pt 'MS Shell Dlg 2';
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.323864 rgba(222, 45, 175, 255), stop:0.5 rgba(211, 61, 235, 255), stop:0.642045 rgba(157, 45, 241, 255), stop:1 rgba(0, 0, 255, 255));
+padding-top:10px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Logs</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="light">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>440</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+border:4px solid black;
+border-radius:30px;
+color:black;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.323864 rgba(222, 45, 175, 255), stop:0.5 rgba(211, 61, 235, 255), stop:0.642045 rgba(157, 45, 241, 255), stop:1 rgba(0, 0, 255, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>481</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+border:4px solid black;
+border-radius:40px;
+	
+	background-color: rgb(250, 249, 246);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitButton">
+    <property name="geometry">
+     <rect>
+      <x>499</x>
+      <y>0</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>CLOSE</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color: qlineargradient(spread:pad, x1:0.142045, y1:0.148, x2:1, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.704545 rgba(144, 0, 0, 255));border-radius:10px;}
+
+
+QPushButton::hover{background-color: qlineargradient(spread:pad, x1:0.142045, y1:0.148, x2:1, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.704545 rgba(144, 0, 0, 255));border:rgba(170,0,250,255);border-radius:5px;}
+
+
+QPushButton::pressed{padding-top:10px;padding-up:5px;background-color: qlineargradient(spread:pad, x1:0.142045, y1:0.148, x2:1, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.704545 rgba(144, 0, 0, 255));}</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>190</y>
+      <width>121</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{background-color:rgba(0,0,0,0);
+border:none;
+border-bottom: 3px solid rgba(42,226,230,255);
+color:rgba(0,0,0,255);
+padding-bottom:7px;
+border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.323864 rgba(222, 45, 175, 255), stop:0.5 rgba(211, 61, 235, 255), stop:0.642045 rgba(157, 45, 241, 255), stop:1 rgba(0, 0, 255, 255));
+}
+
+QComboBox QAbstractItemView {
+    background-color: white;
+    color: black;
+}</string>
+    </property>
+    <property name="currentText">
+     <string>New Item</string>
+    </property>
+    <property name="insertPolicy">
+     <enum>QComboBox::NoInsert</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+    </property>
+    <item>
+     <property name="text">
+      <string>New Item</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>New Item</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>189</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>COM Port:</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>label_5</zorder>
+   <zorder>ateHeading</zorder>
+   <zorder>textBrowser</zorder>
+   <zorder>serialLabel</zorder>
+   <zorder>lineEditBarcode</zorder>
+   <zorder>lineEditName</zorder>
+   <zorder>nameLabel</zorder>
+   <zorder>start</zorder>
+   <zorder>log</zorder>
+   <zorder>light</zorder>
+   <zorder>exitButton</zorder>
+   <zorder>comboBox</zorder>
+   <zorder>label</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

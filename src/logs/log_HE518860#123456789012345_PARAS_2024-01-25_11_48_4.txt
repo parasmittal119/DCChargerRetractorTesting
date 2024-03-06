@@ -1,0 +1,9 @@
+DUT PART NUMBER: HE518860#123456789012345
+
+Testing Engg. Name: PARAS
+
+Checking color state for "Idle Idle".
+Color state for "Idle Idle" is wrong...
+Checking color state for "Idle Preparing".
+Color state for "Idle Preparing" is wrong...
+Checking color state for "Idle Charging".
